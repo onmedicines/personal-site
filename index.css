@@ -59,18 +59,15 @@ section.navbar > a:hover {
 }
 .developer .main-heading {
   margin: 0 10px 0 50px;
+  position: relative;
+  top: 20px;
 }
 .developer .main-heading h1 {
   color: #118cb9;
   font-family: var(--monospace);
 }
 .developer .main-heading .gradient-container {
-  margin-top: 15px;
-  border: 1px solid cyan;
-  padding: 18px;
   border-radius: 10px;
-  position: relative;
-  right: 15px;
 }
 .developer .main-heading h1.gradient {
   font-family: var(--monospace);
@@ -108,15 +105,40 @@ section.navbar > a:hover {
   border-radius: 10px;
   padding: 6px 30px;
   position: relative;
-  top: 21px;
+  top: 28px;
 }
 .developer .skills p {
   font-size: 20px;
   color: #118cb9;
+  font-family: var(--montserrat);
+}
+.developer .skills .python,
+.developer .content .python {
+  color: #f5d020;
+}
+.developer .skills .cpp,
+.developer .content .cpp {
+  color: #0280ce;
+}
+.developer .skills .html,
+.developer .content .html {
+  color: #f1672b;
+}
+.developer .skills .css,
+.developer .content .css {
+  color: #4997d5;
+}
+.developer .skills .js,
+.developer .content .js {
+  color: #d5b931;
+}
+.developer .skills .java,
+.developer .content .java {
+  color: #eb2025;
 }
 /* BASKETBALL SECTION*/
 section.basketball {
-  background-color: #f5f3c1;
+  background-color: #804674;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,17 +147,16 @@ section.basketball {
 }
 .basketball .main-heading {
   margin-left: 50px;
+  position: relative;
+  top: 10px;
 }
 .basketball .main-heading h1 {
   font-family: var(--monospace);
   font-weight: 600;
-  color: #804674;
+  color: #ffbefb;
 }
 .basketball .main-heading .gradient-container {
-  margin-top: 15px;
-  border: 2px solid #e796d6;
   padding: 10px 15px;
-  border-radius: 10px;
   position: relative;
   right: 16px;
 }
@@ -146,13 +167,14 @@ section.basketball {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
   /* margin: 0; */
 }
 .basketball .content {
-  border: 2px solid #e796d6;
+  border: 2px solid #ff22cf;
   border-radius: 10px;
   padding: 0 25px;
-  margin: 0 100px;
+  margin: 0 70px 0 30px;
   position: relative;
   top: 10px;
 }
@@ -161,11 +183,53 @@ section.basketball {
   font-family: var(--montserrat);
   font-size: 24px;
   font-weight: 600;
-  color: #804674;
+  color: #ffbefb;
+}
+.basketball .content p span:nth-child(3) {
+  color: #936bff;
+}
+.basketball .content p span:nth-child(4) {
+  color: #efe27d;
+}
+.basketball .content p span:nth-child(5) {
+  color: #ff3a51;
+}
+.basketball .content p span:nth-child(6) {
+  color: #ffffff;
+}
+.basketball .content p span:nth-child(9) {
+  color: #118cb9;
+}
+.basketball .content p span:nth-child(10) {
+  color: #25bd4b;
+}
+.basketball .content p span:nth-child(11) {
+  background-image: linear-gradient(90deg, #118cb9, #25bd4b, #ffa0bb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.basketball .video {
+  border: 2px solid #ff22cf;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 30px auto auto;
+  padding: 20px;
+  position: relative;
+  top: 10px;
 }
 .basketball .video iframe {
-  margin: 30px 30px 0 20px;
-  height: 250px;
-  width: 400px;
+  height: 180px;
+  width: 350px;
   border-radius: 10px;
+}
+.basketball .video p {
+  font-family: var(--montserrat);
+  font-size: 21px;
+  font-weight: 500;
+  margin: 20px auto 0 auto;
+  color: #ffbefb;
 }
