@@ -1,0 +1,171 @@
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --monospace: "IBM Plex Mono", monospace;
+  --cursive: "Sacramento", cursive;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 42px;
+}
+/* NAVBAR SECTION */
+section.navbar {
+  margin: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.8vh;
+  background-color: #1e1e1e;
+}
+section.navbar > a {
+  font-size: larger;
+  font-family: var(--montserrat);
+  color: #118cb9;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+  transition: color 250ms;
+}
+section.navbar > p {
+  font-family: var(--montserrat);
+  color: #f9e2af;
+}
+p#name {
+  font-size: 24px;
+  position: relative;
+}
+/* ON HOVER */
+section.navbar > a:hover {
+  color: #f3c665;
+}
+
+/* DEVELOPER SECTION */
+.developer {
+  height: 85vh;
+  width: 98.9vw;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.developer .main-heading {
+  margin: 0 10px 0 50px;
+}
+.developer .main-heading h1 {
+  color: #118cb9;
+  font-family: var(--monospace);
+}
+.developer .main-heading .gradient-container {
+  margin-top: 15px;
+  border: 1px solid cyan;
+  padding: 18px;
+  border-radius: 10px;
+  position: relative;
+  right: 15px;
+}
+.developer .main-heading h1.gradient {
+  font-family: var(--monospace);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 167, 5),
+    lime,
+    rgb(65, 195, 239),
+    rgb(177, 7, 177),
+    rgb(255, 90, 118)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.developer .content {
+  margin: 0 100px 0 60px;
+  padding: 0 30px 0 30px;
+  border: 1px solid cyan;
+  border-radius: 10px;
+  position: relative;
+  top: 25px;
+}
+.developer .content p {
+  color: #118cb9;
+  text-align: left;
+  font-family: var(--montserrat);
+  font-size: 24px;
+  font-weight: 600;
+}
+.developer .skills {
+  margin: 0 30px 0 0;
+  width: 700px;
+  border: 1px solid cyan;
+  border-radius: 10px;
+  padding: 6px 30px;
+  position: relative;
+  top: 21px;
+}
+.developer .skills p {
+  font-size: 20px;
+  color: #118cb9;
+}
+/* BASKETBALL SECTION*/
+section.basketball {
+  background-color: #f5f3c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.basketball .main-heading {
+  margin-left: 50px;
+}
+.basketball .main-heading h1 {
+  font-family: var(--monospace);
+  font-weight: 600;
+  color: #804674;
+}
+.basketball .main-heading .gradient-container {
+  margin-top: 15px;
+  border: 2px solid #e796d6;
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: relative;
+  right: 16px;
+}
+.basketball .main-heading h1.gradient {
+  font-family: var(--monospace);
+  background-color: #f5d020;
+  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* margin: 0; */
+}
+.basketball .content {
+  border: 2px solid #e796d6;
+  border-radius: 10px;
+  padding: 0 25px;
+  margin: 0 100px;
+  position: relative;
+  top: 10px;
+}
+.basketball .content p {
+  text-align: left;
+  font-family: var(--montserrat);
+  font-size: 24px;
+  font-weight: 600;
+  color: #804674;
+}
+.basketball .video iframe {
+  margin: 30px 30px 0 20px;
+  height: 250px;
+  width: 400px;
+  border-radius: 10px;
+}
